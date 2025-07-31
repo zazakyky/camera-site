@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotobooth Lucu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fotobooth Lucu!</h1>
+        <div class="video-photo-container">
+            <video id="video" class="video-stream" autoplay></video>
+            <div class="photo-strip"></div>
+        </div>
+        <div class="controls">
+            <button id="snap" class="button">Ambil Foto</button>
+            <button id="save" class="button">Simpan Foto</button>
+            <select id="filter" class="button">
+                <option value="none">Tanpa Filter</option>
+                <option value="grayscale">Hitam Putih</option>
+                <option value="sepia">Sepia</option>
+                <option value="invert">Invert Warna</option>
+                <option value="blur">Blur</option>
+                <option value="brightness">Kecerahan</option>
+                <option value="contrast">Kontras</option>
+            </select>
+        </div>
+        <div id="countdown" class="countdown">3</div> <!-- Elemen untuk timer -->
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
