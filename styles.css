@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcc00; /* Warna latar belakang cerah */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font lucu */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-photo-container {
+    display: flex; /* Mengatur video dan foto dalam satu baris */
+    align-items: flex-start; /* Menyelaraskan bagian atas */
+}
+
+.video-stream {
+    width: 60%;
+    border: 5px solid #ff3366; /* Warna border */
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+.photo-strip {
+    display: flex;
+    flex-direction: column; /* Mengatur foto dalam satu kolom */
+    align-items: center;
+    margin-left: 20px; /* Jarak antara video dan foto */
+}
+
+.photo-box {
+    width: 100px; /* Atur lebar kotak foto */
+    height: 100px; /* Atur tinggi kotak foto */
+    margin: 5px; /* Jarak antar kotak */
+    border: 2px solid #ff3366; /* Warna border kotak foto */
+    border-radius: 10px; /* Sudut melengkung */
+    overflow: hidden; /* Sembunyikan bagian yang melebihi kotak */
+    background-size: cover; /* Mengatur ukuran gambar agar sesuai dengan kotak */
+    background-position: center; /* Memusatkan gambar */
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #ff3366; /* Warna tombol */
+    color: white; /* Teks putih */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px; /* Sudut melengkung tombol */
+    cursor: pointer;
+    transition: transform 0.2s; /* Transisi saat hover */
+}
+
+.button:hover {
+    transform: scale(1.1); /* Membesar saat di-hover */
+}
+
+.countdown {
+    font-size: 48px; /* Ukuran font untuk timer */
+    color: #ff3366; /* Warna timer */
+    margin-top: 20px; /* Jarak atas */
+}
+
+canvas {
+    display: none;
+}
